@@ -1,0 +1,80 @@
+/* 
+    Created on : 13 oct. 2020, 15:19:39
+    Modified   : 13 oct. 2020, 15:19:39
+    Author     : Sabri Sofiane
+    Description : Style du formulaire à remplir 
+*/
+
+.titreFormulaire{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.14rem;
+    color: #00569D;
+    padding-top: 40px;
+    line-height: 1;
+}
+
+/*.touchard
+{
+    margin-top: 22px;
+    padding: 22px;
+}*/
+.navbar-dark .navbar-brand
+{
+    font-weight: bold;
+    
+    
+}
+.navbar-nav
+{
+    color:#00569D;
+}
+
+.bg-primary
+{
+    background-color: #00569D !important ;
+}
+
+.nom
+{
+    right: 50px;
+}
+.col-sm-10 {
+    
+    
+}
+.boite{
+     background-color: #ff0;
+    
+    top: 200px;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: 1;
+}
+.boite2
+{
+    background-color: #fff;
+    top: 15px;
+    width: 98%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    left: 1%;
+}
+.form-group
+{
+    padding-left: 3%;
+    padding-top: 2%;
+    
+}
+
+.formulaire
+{
+   padding-left: 24px;
+   padding-top: 12px;
+}
+.info
+{
+   font-size: 2px;
+}

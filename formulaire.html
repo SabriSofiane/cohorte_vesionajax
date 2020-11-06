@@ -1,0 +1,91 @@
+<form action="php/gestion_cohorte.php" method="post" id="formulaireInscription">
+    <input type="hidden" name="action" id="action" value="insert">
+    <div class="form-group">
+        <div class="form-row">
+            <label for="prenom" class="col-sm-2 col-form-label">Donnez votre prénom*:</label>
+            <div class="col-xs-4">
+                <input type="text" value="" class="form-control" name="prenom" placeholder="Prénom" id="prenom" required="required" pattern="^[a-zA-Z\-çïéêëîÏÎËÊÉÈÇœ' ]*$">
+            </div>
+
+        </div>
+
+        <br>
+        <div class="form-row">
+            <label for="nom" class="col-sm-2 col-form-label">Donnez votre nom*:</label>
+            <div class="col-xs-4">
+                <input type="text" value="" class="form-control" placeholder="Nom" name="nom" id="nom" required="required" pattern="^[a-zA-Z\-çïéêëîÏÎËÊÉÈÇœ' ]*$">
+            </div>
+        </div>
+
+        <br>
+        <div class="form-row">
+            <label for="dateDeNaissance" class="col-sm-2 col-form-label">Donnez votre date de naissance*:</label>
+            <div class="col-xs-4">
+                <input type="date" value="" class="form-control" name="dateDeNaissance" id="dateDeNaissance" required="required" max="2005-01-01">
+            </div>
+        </div>
+        <br>
+        <div class="form-row">
+            <label for="classeFrequentee" class="col-sm-2 col-form-label" >Classe fréquentée lors du diplôme*:</label>
+            <div class="col-xs-4">
+                <select id="formationsPrebac" name="classeFrequentee">
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="form-row">
+            <label for="situationActuelle" class="col-sm-2 col-form-label">Selectionnez votre situation actuelle*:</label>
+            <div class="col-xs-4">
+                <select id="formationsPostbac" name="situationActuelle">
+                </select>
+            </div>
+
+
+        </div>
+        <div class="form-row">
+            <label for="nom" class="col-sm-2 col-form-label">Veuillez préciser*:</label>
+            <div class="col-xs-4">
+                <input type="text" value="" class="form-control" placeholder="Préciser" name="precisionSituation" id="precisionSituation" required="required" >
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-row">
+            <label for="numeroTel" class="col-sm-2 col-form-label">Numéro de téléphone:</label>
+            <div class="col-xs-4">
+                <input type="tel" value="" class="form-control" placeholder="00.00.00.00.00"id="numeroTel" name="numeroTel" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}">
+                <small>Format : 01.02.03.04.05</small>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="form-row">
+            <label for="addressEmail" class="col-sm-2 col-form-label">Adresse mail valable*:</label>
+            <div class="col-xs-4">
+                <input type="email" value="" class="form-control" placeholder="un@exemple.com" id="adresseEmail" name="adresseEmail" required="required">
+            </div>
+            <br>
+
+        </div>
+        <br>
+        <div class='custom-control custom-checkbox'>
+            <input type='checkbox' class='custom-control-input' id='customCheck1' name='rgpd' required='required' >
+            <label class='custom-control-label' for='customCheck1' >J'ai bien lu les</label>
+            <a href='informations.php' >mentions légales.</a> 
+            <a>*</a>
+        </div>
+
+        <small>* :champ obligatoire</small>
+        <br>
+        <br>
+
+        <div class="form-row " >
+            <button type="submit" class="btn btn-primary  ">Envoyer</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</form>
