@@ -23,9 +23,7 @@ Powered with Bootstrap
             <h1 class="titre" style="right: 600px;"  >Suivi d'inscription</h1>
         </div>
         <div class="container-fluid "> 
-            <a href="index.html">
-                <img  style="padding-bottom: 12px;" />
-            </a>
+            
 
 
 

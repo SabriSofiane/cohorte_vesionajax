@@ -152,6 +152,10 @@ $(document).ready(function ()
     $(document).on("click","#mentions",afficherMentions);
     $(document).on("click","#contact",afficherContact);
     $(document).on("click","#suiviAccueil",afficherFormulaire);
+    $(document).on("click","#contactPdp",afficherContact);
+    $(document).on("click","#mentionsPdp",afficherMentions);
+    $(document).on("click","#contactPdpAdmin",afficherAccueil,afficherContact);
+    $(document).on("click","#mentionsPdpAdmin",afficherAccueil,afficherMentions);
     afficherAccueil();
     $(document).on('submit',"#formulaireInscription",envoyerDonneesInscription);
 

@@ -41,7 +41,7 @@ if (isset($_POST['btn_supprimer'])) {
         <link rel="stylesheet" href="../jquery-confirm.min.css" />
         <link rel="stylesheet" href="../bootstrap.min.css">
 
-
+        <script src="../js/gestion_form_inscription.js" type="text/javascript"></script>
         <script src="../scripts/bootstrap.min.js"></script> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../scripts/jquery-confirm.min.js"></script>
@@ -55,7 +55,7 @@ if (isset($_POST['btn_supprimer'])) {
                     lengthMenu: [10, 30, 60, 120, 600],
                     pageLength: 10,
                     order: [[1, 'desc']],
-                    columns: [{orderable: false}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"},{type: "text"}],
+                    columns: [{orderable: false}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}, {type: "text"}],
                     "language": {
                         "url": "../scripts/dataTable.French.json"
                     }
@@ -74,7 +74,7 @@ if (isset($_POST['btn_supprimer'])) {
                         }
                 }
 
-                
+
                 $("#all").click(function () {
                     cocherTout(this.checked);
                 });
@@ -159,7 +159,28 @@ if (isset($_POST['btn_supprimer'])) {
         </script>
     </head>
     <body>
-       
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand" href="../index.html">LPO Touchard - Washington</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" data-toggle="dropdown">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="suivi">Effectuer son suivi</a></li>
+                            <li><a class="dropdown-item" href="#" id="contact">Contacter</a></li>
+                            <li><a class="dropdown-item" href="#" id="mentions">Mentions légales</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+
+        </nav>
+
         <div class="container" style="padding-top: 50px; max-width: 1500px;">
             <div class="row popin card">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -200,6 +221,12 @@ if (isset($_POST['btn_supprimer'])) {
                     </div>
                 </div>
             </div>
-            
+            <div class="footer text-center fixed-bottom" style="background-color: #00569d;">
+                <a class="textefooter" href="#" id="contactPdpAdmin">Contacter</a> &nbsp; | &nbsp; 
+                <a class="textefooter" href="#" id="mentionsPdpAdmin">Mentions légales</a> &nbsp; | &nbsp;
+                <a class="textefooter" href="https://github.com/SabriSofiane/cohorte">Dépôt public code source</a>
+            </div>
+
+
     </body>
 </html>
