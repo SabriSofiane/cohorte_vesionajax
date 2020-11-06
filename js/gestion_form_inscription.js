@@ -89,7 +89,7 @@ function afficherContact(event)
 function afficherAccueil()
 {
      //event.preventDefault(); 
-    console.log("contact");
+    console.log("accueil");
       $("#zoneCentrale").empty();
     $("#zoneCentrale").load("accueil.html",function(response,status,xhr){
        if (status == "error")
